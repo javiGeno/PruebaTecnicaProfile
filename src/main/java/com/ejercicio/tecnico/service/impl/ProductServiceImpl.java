@@ -25,11 +25,8 @@ public class ProductServiceImpl implements ProductService{
 		
 		LOG.info("ProductService : getProductPrices: arg Prices "+ prices.toString());
 
-		
 		List<Prices> p= (ArrayList<Prices>) productDao.findByBrandIdAndproductIdBetweenDate(prices.getBrand(), prices.getProduct(), prices.getDateAplication());
 		LOG.info("ProductService : bbdd: Prices "+ p.toString());
-		
-		
 		
 		return fillResponse(p) ;
 	}

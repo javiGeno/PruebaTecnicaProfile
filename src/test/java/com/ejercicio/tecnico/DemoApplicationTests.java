@@ -97,13 +97,6 @@ class DemoApplicationTests {
 	                .content(jsonRequest)
 	                .accept(MediaType.APPLICATION_JSON))
 	                .andDo(print())
-//	                .andExpect(jsonPath("$.brand").exists())
-//	                .andExpect(jsonPath("$.dateAplication").exists())
-//	                .andExpect(jsonPath("$.product").exists())
-//	                .andExpect(jsonPath("$.brand", is(brand)))
-//	                .andExpect(jsonPath("$.dateAplication").value(dateApp))
-//	                .andExpect(jsonPath("$.product").value(product))
-//	                .andExpect(jsonPath("$.*", hasSize(3)))
 	                .andReturn();
 	}
 
